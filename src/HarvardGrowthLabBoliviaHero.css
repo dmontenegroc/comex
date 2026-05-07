@@ -1,0 +1,177 @@
+/* ─── Contenedor principal ─────────────────────────────────────────────────── */
+.hgl-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #050810;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ─── Canvas ocupa todo el bloque ─────────────────────────────────────────── */
+.hgl-wrapper canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ─── Overlay superior: etiqueta institucional ────────────────────────────── */
+.hgl-label-top {
+  position: absolute;
+  top: 22px;
+  left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hgl-label-top .hgl-institution {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #4a8fa8;
+  opacity: 0.85;
+}
+
+.hgl-label-top .hgl-title {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a8c8d8;
+  font-weight: 600;
+}
+
+/* ─── Indicadores macro: columna derecha ─────────────────────────────────── */
+.hgl-macro-panel {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hgl-macro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+
+.hgl-macro-label {
+  font-size: 7px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #3a6070;
+}
+
+.hgl-macro-value {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.hgl-macro-value.red    { color: #c85a3a; }
+.hgl-macro-value.green  { color: #3aaa70; }
+.hgl-macro-value.yellow { color: #c8a03a; }
+.hgl-macro-value.cyan   { color: #3ab0c8; }
+
+/* ─── Leyenda de pilares: esquina inferior izquierda ─────────────────────── */
+.hgl-pillar-legend {
+  position: absolute;
+  bottom: 24px;
+  left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hgl-pillar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hgl-pillar-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hgl-pillar-name {
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #5a8090;
+}
+
+/* ─── Ticker inferior: línea de datos ────────────────────────────────────── */
+.hgl-ticker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: rgba(5, 8, 16, 0.72);
+  border-top: 1px solid rgba(58, 176, 200, 0.12);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hgl-ticker-track {
+  display: flex;
+  gap: 0;
+  animation: ticker-scroll 28s linear infinite;
+  white-space: nowrap;
+}
+
+.hgl-ticker-item {
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #3a6070;
+  padding: 0 18px;
+  border-right: 1px solid rgba(58, 176, 200, 0.1);
+}
+
+.hgl-ticker-item span {
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+.hgl-ticker-item span.up   { color: #3aaa70; }
+.hgl-ticker-item span.down { color: #c85a3a; }
+.hgl-ticker-item span.flat { color: #c8a03a; }
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ─── Línea de spread / riesgo país: fondo inferior ──────────────────────── */
+.hgl-risk-line {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* ─── Responsive básico ──────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .hgl-macro-panel  { display: none; }
+  .hgl-pillar-legend { bottom: 36px; }
+  .hgl-label-top .hgl-title { font-size: 9px; }
+}
