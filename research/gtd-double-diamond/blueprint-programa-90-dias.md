@@ -1,6 +1,8 @@
 # Programa de 90 Días — Blueprint operativo
 ## Sistema de productividad personal (GTD + PARA + Double Diamond) instalado en Notion, con acompañamiento semanal y fin declarado
 
+> ⚠️ **DOCUMENTO SUPERADO.** El documento operativo vigente es **`blueprint-programa-90-dias-v2.md`**, que incorpora las correcciones de la auditoría crítica (`analisis-critico-y-mejoras-programa-90-dias.md`). Este archivo se conserva solo como registro de la versión inicial. **No usar para operar ni para material comercial.**
+
 **Fecha:** 1 de agosto de 2026
 **Naturaleza:** documento maestro que integra la base metodológica (GTD, PARA, Double Diamond, aplicados según el caso) dentro del servicio comercial "Programa de 90 Días". Define qué se vende, cómo se entrega, cómo se mide y qué guardrails lo protegen.
 
