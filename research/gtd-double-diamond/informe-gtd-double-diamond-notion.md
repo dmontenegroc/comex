@@ -5,6 +5,8 @@
 **Destinatario:** consultor cuyo producto central es *sostener el hábito de la revisión semanal*, no enseñar la herramienta.
 **Autoría de la investigación:** análisis documental sobre fuentes primarias (libros, papers, sitios oficiales) y secundarias, en español e inglés.
 
+> **Documentos companion (leer en orden):** (1) `analisis-integracion-primeros-principios.md` — integración GTD × Double Diamond desde primeros principios y formalización del "en función del caso"; (2) `integracion-para-capa-de-memoria.md` — suma **PARA** como capa de memoria, resuelve las colisiones de terminología y consolida el sistema de **tres capas** (GTD=proceso, PARA=memoria, Double Diamond=exploración).
+
 > **Actualización (documento companion):** ver `analisis-integracion-primeros-principios.md`. Al no existir precedente, se investigó cada método por separado y se construyó la integración desde primeros principios. Ese análisis **revisa la conclusión de §2.1**: GTD *sí* contiene divergencia/convergencia (en su Modelo de Planificación Natural), y Double Diamond completa el hueco exacto que a GTD le falta (el primer diamante, para problemas mal definidos). Ahí también se **formaliza la propuesta original del consultor** —"aplicar ambas metodologías en función del caso"— como un **modelo de contingencia** con anclaje en Cynefin y un disparador operativo de bajo costo.
 
 ### Convención de etiquetado (usada en todo el documento)

@@ -10,6 +10,8 @@
 - **[ANÁL]** = análisis/inferencia propia de esta investigación (no es un hecho publicado; es razonamiento).
 - **[PROP-CLIENTE]** = **propuesta empírica original del consultor** (destinatario): "implementar ambas metodologías en función del caso". Se trata aquí como hipótesis a formalizar y someter a estrés, **no** como algo a validar contra literatura previa (no la hay).
 
+> **Documento companion posterior:** ver `integracion-para-capa-de-memoria.md`, que suma **PARA** como tercera capa (memoria/estructura) y muestra que es **ortogonal** a este modelo de ruteo (el proceso cambia con el caso; el almacenamiento no). El paso "Aclarar" pasa a ser un keystone que decide **proceso + archivo** en un solo gesto.
+
 > **Punto de partida honesto:** la ausencia de precedente significa que **nadie ha probado que esto funcione**. Lo que sigue no es evidencia de que funcione; es un **argumento de plausibilidad estructural** — mostrar que las piezas encajan por diseño, no por casualidad — más un mapa explícito de dónde el argumento podría romperse. La validación real es de campo (§7).
 
 ---
